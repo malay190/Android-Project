@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Calculator1</string>
+    <string name="textview1">TextView</string>
+    <string name="mytextview2">TextView</string>
+    <string name="mybtn9">9</string>
+    <string name="mybtn6">6</string>
+    <string name="mybtn5">5</string>
+    <string name="mybtndiv">/</string>
+    <string name="mybtnmul">*</string>
+    <string name="mybtn7">7</string>
+    <string name="mybtn8">8</string>
+    <string name="mybtn4">4</string>
+    <string name="mybtnplus">+</string>
+    <string name="mybtn3">3</string>
+    <string name="mybtn2">2</string>
+    <string name="mybtn1">1</string>
+    <string name="mybtndot">.</string>
+    <string name="mybtnclear">clear</string>
+    <string name="mybtn0">0</string>
+    <string name="mybtnequal">=</string>
+    <string name="mybtnsub">-</string>
+</resources>
