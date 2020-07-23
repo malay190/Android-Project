@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     private static final String DIVISION = "/";
     private static final String EQU = "=";
     private static String ACTION;
-    private double val1;
+    private double val1 = Double.NaN;
     private double val2;
     private double Result;
 
@@ -171,8 +171,10 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 compute();
                 ACTION = ADDITION;
-                t1.setText(String.valueOf(val1) + "+");
-                t2.setText(null);
+                t2.setText(t2.getText().toString()+"+");
+                t1.setText(String.valueOf(val1));
+
+
             }
         });
 
@@ -182,7 +184,7 @@ public class MainActivity extends AppCompatActivity {
                 compute();
                 ACTION = SUBTRACTION;
                 t1.setText(String.valueOf(val1) + "-");
-                t2.setText(null);
+
             }
         });
 
@@ -211,7 +213,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 compute();
                 ACTION = EQU;
-                t1.setText(t1.getText().toString() + String.valueOf(val2) + "=" + String.valueOf(val1));
+                t1.setText(String.valueOf(val1));
                 // 5 + 4 = 9
                 t2.setText(null);
             }
@@ -254,6 +256,8 @@ public class MainActivity extends AppCompatActivity {
                     val1 = val1 / val2;
                     break;
                 case EQU:
+                    break;
+                default:
                     break;
             }
         }
